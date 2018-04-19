@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<CodeDoc>
+	<Class name="DockContentEventArgs">
+		<ClassDef>
+			<summary>Provides data for <see cref="NTDLS.Docking.DockPanel.ContentAdded"/> and 
+			<see cref="NTDLS.Docking.DockPanel.ContentRemoved"/> events.</summary>
+		</ClassDef>
+		<Constructor name="(IDockContent)">
+			<summary>Initializes a new instance of <see cref="NTDLS.Docking.DockContentEventArgs"/> class.</summary>
+			<param name="content">The <see cref="NTDLS.Docking.IDockContent"/> object.</param>
+		</Constructor>
+		<Property name="Content">
+			<summary>Gets the <see cref="NTDLS.Docking.IDockContent"/> object.</summary>
+			<value>The <see cref="NTDLS.Docking.IDockContent"/> object.</value>
+		</Property>
+	</Class>
+</CodeDoc>
