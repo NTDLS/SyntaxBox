@@ -1,7 +1,7 @@
 ﻿
-//    Copyright (C) 2005  Sebastian Faltoni <sebastian@dotnetNTDLS.net>
+//    Copyright (C) 2005  Sebastian Faltoni <sebastian@NTDLS.net>
 //
-//    Copyright (C) 2005/2006  Riccardo Marzi <riccardo@dotnetNTDLS.net>
+//    Copyright (C) 2005/2006  Riccardo Marzi <riccardo@NTDLS.net>
 //
 //    This library is free software; you can redistribute it and/or
 //    modify it under the terms of the GNU Lesser General Public

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("NTDLS.Windows.Forms")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("dotnetNTDLS.org")]
+[assembly: AssemblyCompany("NTDLS.org")]
 [assembly: AssemblyProduct("NTDLS.Windows.Forms")]
-[assembly: AssemblyCopyright("Copyright dotnetNTDLS.org 2005")]
+[assembly: AssemblyCopyright("Copyright NTDLS.org 2005")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

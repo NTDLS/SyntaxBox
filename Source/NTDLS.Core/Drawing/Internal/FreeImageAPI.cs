@@ -23,9 +23,9 @@
 //
 // Use at your own risk!
 //
-// Modified by Sebastian Faltoni <sebastian@dotnetNTDLS.net>
+// Modified by Sebastian Faltoni <sebastian@NTDLS.net>
 //
-// Modified by Riccardo Marzi <riccardo@dotnetNTDLS.net>
+// Modified by Riccardo Marzi <riccardo@NTDLS.net>
 //
 // ==========================================================
 

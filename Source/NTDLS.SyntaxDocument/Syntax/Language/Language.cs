@@ -1,5 +1,5 @@
 
-//	Copyright (C) 2005  Sebastian Faltoni <sebastian@dotnetNTDLS.org>
+//	Copyright (C) 2005  Sebastian Faltoni <sebastian@NTDLS.org>
 //	
 //	Copyright (C) compona.com 
 //	
