@@ -16,9 +16,12 @@
 //    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 using System;
 using System.Runtime.InteropServices;
+using System.Security;
 
 namespace NTDLS.Win32
 {
+    [SecuritySafeCritical]
+
     public static class NativeThemeApi
     {
         #region uxTheme.dll

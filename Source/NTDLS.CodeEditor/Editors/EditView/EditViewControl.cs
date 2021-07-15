@@ -21,12 +21,14 @@ using NTDLS.Win32;
 using System.IO;
 using NTDLS.Globalization;
 using NTDLS.Timers;
+using System.Security;
 
 #endregion
 
 namespace NTDLS.Windows.Forms.CodeEditor
 {
 	[ToolboxItem(false)]
+	[SecuritySafeCritical]
 	public sealed class EditViewControl : SplitViewChildWidget
 	{
 		#region General Declarations

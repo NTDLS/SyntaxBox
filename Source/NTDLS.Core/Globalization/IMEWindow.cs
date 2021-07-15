@@ -9,11 +9,13 @@
 // *
 
 using System;
-using System.Drawing; 
+using System.Drawing;
+using System.Security;
 using NTDLS.Win32;
 
 namespace NTDLS.Globalization
 {
+    [SecuritySafeCritical]
     public class IMEWindow
     {
         private const int IMC_SETCOMPOSITIONWINDOW = 0x000c;

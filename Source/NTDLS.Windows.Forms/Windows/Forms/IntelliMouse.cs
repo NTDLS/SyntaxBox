@@ -8,12 +8,14 @@ using ScrollEventHandler = NTDLS.Windows.Forms.IntelliMouse.ScrollEventHandler;
 using NTDLS.Timers;
 using NTDLS.Win32;
 using System.IO;
+using System.Security;
 
 namespace NTDLS.Windows.Forms
 {
 	/// <summary>
 	/// Summary description for IntelliMouseControl.
 	/// </summary>
+	[SecuritySafeCritical]
 	public class IntelliMouseControl : Control
 	{
 		protected const int WM_MBUTTONDOWN = 0x0207;

@@ -19,12 +19,14 @@
 #endregion
 
 using System;
+using System.Security;
 
 namespace NTDLS.Drawing.GDI
 {
 	/// <summary>
 	/// Summary description for GDIObject.
 	/// </summary>
+	[SecuritySafeCritical]
 	public abstract class GDIObject : IDisposable
 	{
 		protected bool IsCreated = false;

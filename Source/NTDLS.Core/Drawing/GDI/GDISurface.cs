@@ -20,11 +20,13 @@
 
 using System;
 using System.Drawing;
+using System.Security;
 using System.Windows.Forms;
 using NTDLS.Win32;
 
 namespace NTDLS.Drawing.GDI
 {
+	[SecuritySafeCritical]
 	public class GDISurface : GDIObject
 	{
 		protected IntPtr mhDC;
@@ -335,6 +337,7 @@ namespace NTDLS.Drawing.GDI
 			NativeGdi32Api.GdiFlush();
 		}
 
+		[SecuritySafeCritical]
 		protected override void Destroy()
 		{
 			if (_OldBmp != IntPtr.Zero)

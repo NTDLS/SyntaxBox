@@ -19,9 +19,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
+using System.Security;
 
 namespace NTDLS.Win32
 {
+    [SecuritySafeCritical]
     public static class NativeImm32Api
     {
         [DllImport("imm32.dll")]

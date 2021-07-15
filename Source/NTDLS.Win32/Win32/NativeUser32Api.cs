@@ -21,10 +21,12 @@ using System;
 using System.Runtime.InteropServices;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Security;
 
 namespace NTDLS.Win32
 {
 
+    [SecuritySafeCritical]
     public static class NativeUser32Api
     {
 

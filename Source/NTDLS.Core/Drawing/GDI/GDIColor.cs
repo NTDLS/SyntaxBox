@@ -22,9 +22,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
+using System.Security;
 
 namespace NTDLS.Drawing.GDI
 {
+    [SecuritySafeCritical]
     public sealed class GDIColor
     {
         private int _NativeColor = 0;

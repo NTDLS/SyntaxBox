@@ -25,11 +25,11 @@ using System.Collections.Generic;
 using System.Text;
 using NTDLS.Win32;
 using System.Runtime.InteropServices;
-
-
+using System.Security;
 
 namespace NTDLS.Drawing
 {
+    [SecuritySafeCritical]
     public class SystemImageList
     {
         #region Member Variables

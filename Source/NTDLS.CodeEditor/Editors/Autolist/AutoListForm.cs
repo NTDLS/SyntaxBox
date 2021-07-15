@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using NTDLS.Win32;
 using NTDLS.Editors.Autolist;
+using System.Security;
 
 namespace NTDLS.Windows.Forms.CodeEditor
 {
@@ -14,6 +15,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
 	/// Summary description for AutoListForm.
 	/// </summary>
 	[ToolboxItem(false)]
+	[SecuritySafeCritical]
 	public class AutoListForm : Form
 	{
 		[DllImport("user32.dll", EntryPoint="SendMessage")]

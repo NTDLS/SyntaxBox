@@ -5,10 +5,12 @@ using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Security.Permissions;
+using System.Security;
 
 namespace NTDLS.Win32
 {
-	public class Win32Window
+    [SecuritySafeCritical]
+    public class Win32Window
     {
         #region Api declarations
 

@@ -23,13 +23,14 @@ using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Design;
+using System.Security;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using NTDLS.Win32;
 
-
 namespace NTDLS.Drawing.GDI
 {
+    [SecuritySafeCritical]
     public class FontList : UITypeEditor
     {
         private IWindowsFormsEditorService edSvc = null;

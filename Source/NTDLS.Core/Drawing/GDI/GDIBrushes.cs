@@ -20,11 +20,13 @@
 
 using System;
 using System.Drawing;
+using System.Security;
 using NTDLS.Win32;
 
 namespace NTDLS.Drawing.GDI
 {
 	//wrapper class for gdi brushes
+	[SecuritySafeCritical]
 	public class GDIBrush : GDIObject
 	{
 		public IntPtr hBrush;
@@ -65,6 +67,7 @@ namespace NTDLS.Drawing.GDI
 			Create();
 		}
 
+		[SecuritySafeCritical]
 		protected override void Destroy()
 		{
 			//only destroy if brush is created by us
@@ -88,6 +91,7 @@ namespace NTDLS.Drawing.GDI
 
 
 	//needs to be recoded , cant create new instances for the same colors
+	[SecuritySafeCritical]
 	public class GDIBrushes
 	{
 		public static GDIBrush Black
@@ -136,6 +140,7 @@ namespace NTDLS.Drawing.GDI
 		}
 	}
 
+	[SecuritySafeCritical]
 	public class GDISystemBrushes
 	{
 		public static GDIBrush ActiveBorder

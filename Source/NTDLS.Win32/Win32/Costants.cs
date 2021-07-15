@@ -17,10 +17,12 @@
 
 using System;
 using System.Collections.Generic;
+using System.Security;
 using System.Text;
 
 namespace NTDLS.Win32
 {
+    [SecuritySafeCritical]
     public class Costants
     {
         public const int BI_RGB = 0;

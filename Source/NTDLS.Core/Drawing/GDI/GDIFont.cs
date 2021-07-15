@@ -19,10 +19,12 @@
 #endregion
 
 using System;
+using System.Security;
 using NTDLS.Win32;
 
 namespace NTDLS.Drawing.GDI
 {
+	[SecuritySafeCritical]
 	public class GDIFont : GDIObject
 	{
 		public bool Bold;
@@ -81,6 +83,7 @@ namespace NTDLS.Drawing.GDI
 			Destroy();
 		}
 
+		[SecuritySafeCritical]
 		protected override void Destroy()
 		{
 			if (hFont != (IntPtr) 0)

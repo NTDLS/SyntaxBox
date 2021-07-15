@@ -3,6 +3,7 @@
 using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.Security;
 using System.Windows.Forms;
 using NTDLS.Drawing;
 using NTDLS.Win32;
@@ -10,6 +11,7 @@ using NTDLS.Win32;
 namespace NTDLS.Windows.Forms
 {
 	[ToolboxItem(true)]
+	[SecuritySafeCritical]
 	public class WidgetPanel : Panel
 	{
         private ControlBorderStyle borderStyle;

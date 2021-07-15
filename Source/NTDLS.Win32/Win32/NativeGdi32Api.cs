@@ -19,12 +19,14 @@
 
 using System;
 using System.Runtime.InteropServices;
+using System.Security;
 
 namespace NTDLS.Win32
 {
 
     public delegate int FONTENUMPROC(ENUMLOGFONTEX f, int lpntme, int FontType, int lParam);
 
+    [SecuritySafeCritical]
     public static class NativeGdi32Api
     {
         [DllImport("gdi32.dll")]

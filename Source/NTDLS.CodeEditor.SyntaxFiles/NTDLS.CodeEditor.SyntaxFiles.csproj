@@ -12,7 +12,7 @@
     <AssemblyName>NTDLS.CodeEditor.SyntaxFiles</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>NTDLS.snk</AssemblyOriginatorKeyFile>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -33,6 +33,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +46,7 @@
     <DocumentationFile>
     </DocumentationFile>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -54,6 +56,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -88,19 +91,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NTDLS.CodeEditor\NTDLS.CodeEditor.csproj">
-      <Project>{94BFA44A-F4D0-4605-88E6-3ADD498F5E16}</Project>
+      <Project>{94bfa44a-f4d0-4605-88e6-3add498f5e16}</Project>
       <Name>NTDLS.CodeEditor</Name>
     </ProjectReference>
     <ProjectReference Include="..\NTDLS.Core\NTDLS.Core.csproj">
-      <Project>{909AD284-7020-4FA9-A55E-7C633A641724}</Project>
+      <Project>{909ad284-7020-4fa9-a55e-7c633a641724}</Project>
       <Name>NTDLS.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\NTDLS.SyntaxDocument\NTDLS.SyntaxDocument.csproj">
-      <Project>{3F43BAB0-22B4-4FD6-9655-8BA214A093A5}</Project>
+      <Project>{3f43bab0-22b4-4fd6-9655-8ba214a093a5}</Project>
       <Name>NTDLS.SyntaxDocument</Name>
     </ProjectReference>
     <ProjectReference Include="..\NTDLS.Windows.Forms\NTDLS.Windows.Forms.csproj">
-      <Project>{0E253078-0AFA-4B69-B27A-001B96735D60}</Project>
+      <Project>{0e253078-0afa-4b69-b27a-001b96735d60}</Project>
       <Name>NTDLS.Windows.Forms</Name>
     </ProjectReference>
   </ItemGroup>

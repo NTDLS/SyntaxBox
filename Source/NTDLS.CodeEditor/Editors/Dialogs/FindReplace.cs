@@ -164,7 +164,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
             pnlReplaceButtons.Visible = false;
             this.Text = Localizations.FindDialogText;
             this.Show();
-            this.Height = 160;
+            this.Height = 175;
             btnDoReplace.Visible = false;
             btnReplace.Visible = true;
             _Last = "";
@@ -196,7 +196,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
             pnlReplaceButtons.Visible = true;
             this.Text = Localizations.ReplaceDialogText;
             this.Show();
-            this.Height = 200;
+            this.Height = 215;
             btnDoReplace.Visible = true;
             btnReplace.Visible = false;
             _Last = "";
@@ -261,7 +261,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
             this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlButtons.Location = new System.Drawing.Point(400, 0);
             this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(96, 178);
+            this.pnlButtons.Size = new System.Drawing.Size(96, 189);
             this.pnlButtons.TabIndex = 0;
             // 
             // panel3
@@ -271,7 +271,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 96);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(96, 82);
+            this.panel3.Size = new System.Drawing.Size(96, 93);
             this.panel3.TabIndex = 4;
             // 
             // btnClose
@@ -431,7 +431,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
             this.pnlSettings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSettings.Location = new System.Drawing.Point(0, 80);
             this.pnlSettings.Name = "pnlSettings";
-            this.pnlSettings.Size = new System.Drawing.Size(400, 98);
+            this.pnlSettings.Size = new System.Drawing.Size(400, 109);
             this.pnlSettings.TabIndex = 3;
             // 
             // groupBox1
@@ -475,7 +475,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
             this.AcceptButton = this.btnFind;
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(496, 178);
+            this.ClientSize = new System.Drawing.Size(496, 189);
             this.Controls.Add(this.pnlSettings);
             this.Controls.Add(this.pnlReplace);
             this.Controls.Add(this.pnlFind);
@@ -486,6 +486,7 @@ namespace NTDLS.Windows.Forms.CodeEditor
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Find";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.FindReplace_Closing);
+            this.Load += new System.EventHandler(this.FindReplaceForm_Load);
             this.pnlButtons.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.pnlReplaceButtons.ResumeLayout(false);
@@ -654,5 +655,10 @@ namespace NTDLS.Windows.Forms.CodeEditor
                 OnTextNotFound(text);
             }
 		}
-	}
+
+        private void FindReplaceForm_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

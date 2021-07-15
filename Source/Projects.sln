@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTDLS.CodeEditor.SyntaxFiles", "NTDLS.CodeEditor.SyntaxFiles\NTDLS.CodeEditor.SyntaxFiles.csproj", "{3814F627-858A-42A3-9AAF-CD649413F2A8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{94BFA44A-F4D0-4605-88E6-3ADD498F5E16} = {94BFA44A-F4D0-4605-88E6-3ADD498F5E16}
@@ -77,5 +79,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E627A4B2-05CC-4104-B7AA-6DFCE8D0B6C1}
 	EndGlobalSection
 EndGlobal

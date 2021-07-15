@@ -19,12 +19,14 @@
 #endregion
 
 using System.Collections;
+using System.Security;
 
 namespace NTDLS.Drawing.GDI
 {
 	/// <summary>
 	/// Summary description for MemHandler.
 	/// </summary>
+	[SecuritySafeCritical]
 	public class MemHandler
 	{
 		private static ArrayList mHeap = new ArrayList();

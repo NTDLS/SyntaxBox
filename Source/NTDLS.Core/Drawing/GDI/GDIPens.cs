@@ -20,10 +20,12 @@
 
 using System;
 using System.Drawing;
+using System.Security;
 using NTDLS.Win32;
 
 namespace NTDLS.Drawing.GDI
 {
+	[SecuritySafeCritical]
 	public class GDIPen : GDIObject
 	{
 		public IntPtr hPen;
@@ -34,6 +36,7 @@ namespace NTDLS.Drawing.GDI
 			Create();
 		}
 
+		[SecuritySafeCritical]
 		protected override void Destroy()
 		{
 			if (hPen != (IntPtr) 0)

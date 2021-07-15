@@ -22,11 +22,13 @@
 
 using System;
 using System.Collections.Generic;
+using System.Security;
 using System.Text;
 using NTDLS.Win32;
 
 namespace NTDLS.Drawing.GDI
 {
+    [SecuritySafeCritical]
     public class GDIBitmap:GDIObject
     {
         private IntPtr _hBmp;
@@ -101,6 +103,7 @@ namespace NTDLS.Drawing.GDI
         //    return color;
         //}
 
+        [SecuritySafeCritical]
         protected override void Destroy()
         {
             if (_hBmp != (IntPtr)0)

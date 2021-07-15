@@ -7,28 +7,30 @@ using System.Drawing.Imaging;
 using System.Windows.Forms;
 using NTDLS.Windows.Forms;
 using NTDLS.Win32;
+using System.Security;
 
 namespace NTDLS.Drawing
 {
-    //public class DesktopGraphics
-    //{
-    //    protected IntPtr hdc = new IntPtr(0);
-    //    protected IntPtr handle = new IntPtr(0);
-    //    public readonly Graphics Graphics;
+	//public class DesktopGraphics
+	//{
+	//    protected IntPtr hdc = new IntPtr(0);
+	//    protected IntPtr handle = new IntPtr(0);
+	//    public readonly Graphics Graphics;
 
-    //    public DesktopGraphics()
-    //    {
-    //        handle = NativeUser32Api.GetDesktopWindow();
-    //        hdc = NativeUser32Api.GetWindowDC(hdc);
-    //        this.Graphics = Graphics.FromHdc(hdc);
-    //    }
+	//    public DesktopGraphics()
+	//    {
+	//        handle = NativeUser32Api.GetDesktopWindow();
+	//        hdc = NativeUser32Api.GetWindowDC(hdc);
+	//        this.Graphics = Graphics.FromHdc(hdc);
+	//    }
 
-    //    public void Dispose()
-    //    {
-    //        NativeUser32Api.ReleaseDC(handle, hdc);
-    //    }
-    //}
+	//    public void Dispose()
+	//    {
+	//        NativeUser32Api.ReleaseDC(handle, hdc);
+	//    }
+	//}
 
+	[SecuritySafeCritical]
 	public sealed class DrawingTools
 	{
 		private DrawingTools()
